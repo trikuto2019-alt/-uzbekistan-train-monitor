@@ -84,7 +84,7 @@ def availability_message(seats: int) -> tuple[str, str]:
     return (
         "🚨 Jaloliddin Manguberdi 空席発生",
         "2026/11/10\n"
-        "Bukhara 10:57 → Tashkent 15:06\n\n"
+        "Bukhara 10:57 → Tashkent 15:12\n\n"
         "Jaloliddin Manguberdi 751M\n\n"
         "購入可能な空席を確認しました。\n\n"
         f"現在の空席数：{seats}\n\n"

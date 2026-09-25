@@ -105,7 +105,7 @@ def interpret_response(data: dict) -> Availability:
 
     dep = _date_time(train.get("departureDate"), "departureDate")
     arv = _date_time(train.get("arrivalDate"), "arrivalDate")
-    if dep.strftime("%Y-%m-%d %H:%M") != "2026-11-10 10:57" or arv.strftime("%Y-%m-%d %H:%M") != "2026-11-10 15:06":
+    if dep.strftime("%Y-%m-%d %H:%M") != "2026-11-10 10:57" or arv.strftime("%Y-%m-%d %H:%M") != "2026-11-10 15:12":
         raise MonitorError("UNKNOWN", "Target date or time changed", data=data)
     route = train.get("subRoute")
     if not isinstance(route, dict):
